@@ -22,7 +22,7 @@ public class ListViewEx2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view_ex2);
-        listView = findViewById(R.id.listView1);
+        listView = findViewById(R.id.listView2);
 
         List<Map<String,Object>> list = new ArrayList<>();
         Map<String,Object> map;

@@ -7,7 +7,7 @@
     tools:context=".ListViewEx">
 
     <ListView
-        android:id="@+id/listView1"
+        android:id="@+id/listView2"
         android:background="@drawable/gradient"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
