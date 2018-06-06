@@ -19,16 +19,15 @@
         <activity android:name=".DatePickerEx" />
         <activity
             android:name=".VideoViewEx"
-            android:theme="@style/AppThemeFull">
-
-        </activity>
+            android:theme="@style/AppThemeFull"></activity>
         <activity android:name=".ListViewEx">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
+        <activity android:name=".ListViewEx2"><intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
     </application>
 
 </manifest>

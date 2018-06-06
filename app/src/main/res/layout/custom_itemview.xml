@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:background="#000" >
+
+    <ImageView
+        android:id="@+id/imageView01"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/textView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+         />
+   
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+	 <!-- 若將此TextView直接放置於外層的LinearLayout，便無法將其重心位置放於右下角  -->
+        <TextView
+            android:id="@+id/textView02"
+            android:layout_gravity="right|bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF" />
+    </FrameLayout>
+</LinearLayout>
