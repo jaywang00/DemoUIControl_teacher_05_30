@@ -14,6 +14,7 @@ public class ListViewEx extends AppCompatActivity implements AdapterView.OnItemC
 
     String[] array = {"Meal", "Vag", "Both_OK"};
     ListView listView;
+    boolean[] checkeds = {false, false, false};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +31,23 @@ public class ListViewEx extends AppCompatActivity implements AdapterView.OnItemC
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 //        Toast.makeText(this,((TextView)view).getText().toString(),Toast.LENGTH_SHORT).show();
 
-        CheckedTextView ctv = (CheckedTextView)view;
-        if(ctv.isChecked())
-            Toast.makeText(this,((TextView)view).getText().toString(),Toast.LENGTH_SHORT).show();
+//        CheckedTextView ctv = (CheckedTextView)view;
+//        if(ctv.isChecked())
+//            Toast.makeText(this,((TextView)view).getText().toString(),Toast.LENGTH_SHORT).show();
+
+
+        CheckedTextView ctv = (CheckedTextView) view;
+        if (ctv.isChecked())
+            checkeds[position] = true;
+        else
+            checkeds[position] = false;
+
+        String choice = "";
+        for (int i = 0; i < array.length; i++) {
+            if (checkeds[i])
+                choice += array[i] + " ";
+        }
+
+        Toast.makeText(this, choice, Toast.LENGTH_SHORT).show();
     }
 }
