@@ -29,4 +29,3 @@ public class ListViewEx extends AppCompatActivity implements AdapterView.OnItemC
         Toast.makeText(this,((TextView)view).getText().toString(),Toast.LENGTH_SHORT).show();
     }
 }
-
