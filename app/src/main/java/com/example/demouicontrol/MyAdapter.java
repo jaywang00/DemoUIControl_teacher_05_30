@@ -31,6 +31,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
     public MyAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,
                                                    int viewType) {
         // create a new view
+        // #### Change to android.R.layout.simple_list_item_1
         TextView v = (TextView) LayoutInflater.from(parent.getContext())
                 .inflate(android.R.layout.simple_list_item_1, parent, false);
 

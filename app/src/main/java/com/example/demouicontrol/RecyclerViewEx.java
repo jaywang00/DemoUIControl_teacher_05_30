@@ -6,7 +6,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 public class RecyclerViewEx extends AppCompatActivity {
+//####### add this line for MyAdapter.java
     private String[] mDataset = {"title1", "title2","title3","title4","title5"};
+
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
