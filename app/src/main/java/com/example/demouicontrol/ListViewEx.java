@@ -19,8 +19,9 @@ public class ListViewEx extends AppCompatActivity implements AdapterView.OnItemC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listview);
         listView = findViewById(R.id.listView1);
-        ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,array);
+        ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_list_item_single_choice,array);
         listView.setAdapter(adapter);
+//        listView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         listView.setOnItemClickListener(this);
     }
 
